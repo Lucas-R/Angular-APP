@@ -6,6 +6,7 @@
         name="{{ name }}" 
         class="form-control" id="{{ id }}" 
         placeholder="{{ placeholder }}"
+        [formControl]="control"
     />
 
     <ng-template #textArea>
@@ -13,6 +14,10 @@
             class="form-control" id="{{ id }}" 
             placeholder="{{ placeholder }}"
             rows="{{ rows }}"
+            [formControl]="control"
         ></textarea>
     </ng-template>
+    <div class="erros" *ngIf="control.invalid && control.dirty && control.touched">
+        Preencha o campo
+    </div>
 </div>
