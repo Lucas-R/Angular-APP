@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { InputComponent } from '../input/input.component';
 import { ButtonComponent } from '../button/button.component';
 

@@ -5,7 +5,7 @@ import { PostFormComponent } from '../../components/post-form/post-form.componen
   selector: 'app-posts',
   standalone: true,
   imports: [PostFormComponent],
-  templateUrl: './posts.component.html',
-  styleUrl: './posts.component.css'
+  templateUrl: './new-post.component.html',
+  styleUrl: './new-post.component.css'
 })
-export class PostsComponent {}
+export class NewPostComponent {}
