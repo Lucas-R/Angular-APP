@@ -1,0 +1,27 @@
+<form (ngSubmit)="onSubmit()">    
+    <app-input 
+        [label]="'Title'"
+        [type]="'text'"
+        [name]="'title'"
+        [id]="'title'"
+        [placeholder]="'Write the title'"
+    ></app-input>
+    <app-input 
+        [label]="'Description'"
+        [type]="'textarea'"
+        [name]="'description'"
+        [id]="'description'"
+        [rows]="'3'"
+        [placeholder]="'Write the description'"
+    />
+    <app-input 
+        [label]="'Photo'"
+        [type]="'file'"
+        [id]="'photo'"
+    />
+    <app-button 
+        [type]="'submit'"
+        [label]="'Enviar'"
+        [class]="'btn-success'"
+    />
+</form>

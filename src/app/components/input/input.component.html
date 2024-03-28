@@ -1,0 +1,18 @@
+<div class="mb-3">
+    <label for="{{ id }}" class="form-label">{{ label }}</label>
+    <input 
+        *ngIf="type !== 'textarea'; else textArea"
+        type="{{ type }}"
+        name="{{ name }}" 
+        class="form-control" id="{{ id }}" 
+        placeholder="{{ placeholder }}"
+    />
+
+    <ng-template #textArea>
+        <textarea 
+            class="form-control" id="{{ id }}" 
+            placeholder="{{ placeholder }}"
+            rows="{{ rows }}"
+        ></textarea>
+    </ng-template>
+</div>
